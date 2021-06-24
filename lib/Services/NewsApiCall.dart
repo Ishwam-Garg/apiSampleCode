@@ -22,12 +22,8 @@ class apiCall {
 
         print(response.body);
 
-        //print(jsonString);
-
-        print(json.decode(jsonString));
-
-        //final NewsModel newsModel = newsModelFromJson(jsonString);
-        final NewsModel newsModel = NewsModel.fromJson(json.decode(jsonString));
+        final NewsModel newsModel = newsModelFromJson(jsonString);
+        //final NewsModel newsModel = NewsModel.fromJson(json.decode(jsonString));
 
         //var jsonMap = json.decode(jsonString);
 

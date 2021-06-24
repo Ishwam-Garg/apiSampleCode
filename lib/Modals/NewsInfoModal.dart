@@ -63,7 +63,7 @@ class Datum {
     required this.summary,
     required this.link,
     required this.published,
-    required this.image,
+    //required this.image,
   });
 
   int id;
@@ -71,7 +71,7 @@ class Datum {
   String summary;
   String link;
   String published;
-  String image;
+  //String image;
 
   factory Datum.fromJson(Map<String, dynamic> json) => Datum(
     id: json["id"],
@@ -79,7 +79,7 @@ class Datum {
     summary: json["summary"] == null ? null : json["summary"],
     link: json["link"],
     published: json["published"],
-    image: json["image"] == null ? null : json["image"],
+    //image: json["image"] == null ? null : json["image"],
   );
 
   Map<String, dynamic> toJson() => {
@@ -88,6 +88,6 @@ class Datum {
     "summary": summary == null ? null : summary,
     "link": link,
     "published": published,
-    "image": image == null ? null : image,
+    //"image": image == null ? null : image,
   };
 }
